@@ -1,0 +1,28 @@
+<mat-card>
+  <mat-card-title>Registro de Usuario</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="registroForm" (ngSubmit)="register()">
+      <mat-form-field>
+        <input matInput placeholder="Nombre" formControlName="nombre">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Apellido" formControlName="apellido">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Correo Electrónico" formControlName="correo">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="password" placeholder="Contraseña" formControlName="contraseña">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="password" placeholder="Confirmar Contraseña" formControlName="confirmarContraseña">
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">Registrarse</button>
+    </form>
+  </mat-card-content>
+</mat-card>

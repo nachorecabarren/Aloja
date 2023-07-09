@@ -1,0 +1,17 @@
+mat-card {
+    margin: 10% auto;
+    width: 50%;
+    align-content: center !important;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  
+  mat-card-title {
+    margin-left: 33%;
+  }
+
+  mat-primary {
+    margin-left: 40% !important;
+  }

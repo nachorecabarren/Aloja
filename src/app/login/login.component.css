@@ -1,0 +1,39 @@
+.google-login-btn {
+  background-image: url('src/assets/google-logo.png');
+  background-repeat: no-repeat;
+  background-size: 8% !important;
+  background-position: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.facebook-login-btn {
+  background-image: url('src/assets/facebook-logo.png');
+  background-repeat: no-repeat;
+  background-size: 14%;
+  background-position: 10%;
+  padding-left: 10%;
+}
+
+.new-user {
+  margin-top: 15px !important;
+  .sign-up {
+    color: blue;
+    cursor: pointer;
+  }
+}
+
+
+mat-card {
+  margin: 10% auto;
+  width: 50%;
+  align-content: center !important;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-card-title {
+  margin-left: 33%;
+}
