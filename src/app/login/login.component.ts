@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {GoogleLoginProvider, SocialAuthService, FacebookLoginProvider} from 'angularx-social-login';
 import {Router} from '@angular/router';
+import { AlojaServiceService } from '../aloja-service.service';
 
 @Component({
   selector: 'app-login',
@@ -10,11 +11,14 @@ import {Router} from '@angular/router';
 export class LoginComponent {
 
   constructor(private router: Router,
-              private socialAuthService: SocialAuthService) {
+              private socialAuthService: SocialAuthService,
+              private alojaService: AlojaServiceService) {
   }
 
   loginWithGoogle(): void {
-    this.socialAuthService.signIn(GoogleLoginProvider.PROVIDER_ID)
+    this.socialAuthService.signIn(GoogleLoginProvider.PROVIDER_ID).then(res => {
+      this.alojaService.setUser(res)
+    })
       .then(() => this.router.navigate(['dashboard']));
   }
 

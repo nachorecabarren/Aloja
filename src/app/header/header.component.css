@@ -1,0 +1,19 @@
+.item {
+    display: block;
+    color: white;
+    margin-left: 55px;
+}
+
+select {
+    margin-left: 55px;
+    width: 40px !important;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: white !important;
+}
+
+.ubicacion {
+    border-radius: 4px;
+}
