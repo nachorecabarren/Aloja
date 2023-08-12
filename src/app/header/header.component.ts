@@ -26,7 +26,9 @@ export class HeaderComponent implements OnInit {
   }
 
   public publicar() {
-    console.log('Metodo para publicar')
+    if (!this.router.url.includes('nueva-publicacion')) {
+    this.router.navigate(['nueva-publicacion']);
+    }
   }
 
   public misPublicaciones() {
