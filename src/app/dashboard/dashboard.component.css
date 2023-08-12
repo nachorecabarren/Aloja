@@ -1,6 +1,27 @@
-app-footer {
-    margin-top: 100%;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.content {
+    margin-left: 300px;
+    margin-top: -990px;
+    padding-left: 64px;
+    padding-right: 64px;
+    position: initial;
+    overflow-y: auto;
+    height: 100%;
+    .search-section {
+        position: relative;
+        margin-top: 64px;
+        .search-bar {
+            border: 2px solid lightslategray;
+            height: 36px;
+            width: 720px;
+            margin-left: 17%;
+            margin-bottom: 16px;
+            padding: 4px;
+        }
+        .input-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
 }

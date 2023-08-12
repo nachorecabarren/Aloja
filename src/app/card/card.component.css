@@ -1,0 +1,37 @@
+.card {
+    display: inline-flex;
+    height: 256px;
+    width: 256px;
+    border: 2px solid lightslategray;
+    border-radius: 6px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    padding: 8px;
+
+    .imagen-pulicacion {
+        border: 1px solid lightslategray;
+        height: 70%;
+        width: 100%;
+        border-radius: 6px;
+    }
+    .info {
+        pointer-events: all;
+        .label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .titulo {
+            display: block;
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .desc {
+            display: block;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }   
+}
