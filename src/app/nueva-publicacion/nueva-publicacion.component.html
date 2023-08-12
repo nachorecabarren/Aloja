@@ -1,0 +1,79 @@
+<header></header>
+<form class="form-publicacion">
+    <div class="form-group otros">
+        <label for="titulo">Titulo de la publicacion:</label>
+        <input class="form-control item" type="text">
+      </div>
+    
+    <div class="form-group">
+        <label for="tipo">Tipo</label>
+        <select class="form-control" id="tipo"> 
+            <option></option>
+            <option>Casa</option>
+            <option>Departamento</option>
+            <option>Duplex</option>
+            <option>Terreno</option>
+        </select>
+      </div>
+    <div class="form-group">
+      <label for="ambientes">Ambientes</label>
+      <select class="form-control" id="ambientes"> 
+        <option></option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4 o mas</option>
+      </select>
+    </div>
+    <div class="form-group">
+        <label for="dormitorios">Dormitorios</label>
+        <select class="form-control" id="dormitorios"> 
+            <option></option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4 o mas</option>
+          </select>      
+    </div>
+    <div class="form-group">
+        <label for="banos">Baños</label>
+        <select class="form-control" id="banos"> 
+            <option></option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4 o mas</option>
+          </select>      
+    </div>
+    <div class="form-group">
+        <label for="cochera">Cochera</label>
+        <select class="form-control" id="cochera"> 
+            <option>No tiene</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4 o mas</option>
+          </select>      
+    </div>
+
+    <div class="form-group otros">
+        <label class="item" for="cochera">Otras caracteristicas: </label>
+        <label class="item"><input class="cb" type="checkbox">Jardin</label> 
+        <label class="item"><input class="cb" type="checkbox">Parrilla</label> 
+        <label class="item"><input class="cb" type="checkbox">Pileta</label> 
+        <label class="item"><input class="cb" type="checkbox">Gimnasio</label> 
+        <label class="item"><input class="cb" type="checkbox">SUM</label> 
+    </div>
+
+   
+    <div class="form-group otros">
+        <label for="formFileMultiple" class="form-label">Imagenes: </label>
+        <input class="form-control-sm" type="file" id="formFileMultiple" multiple />    
+    </div>
+
+
+    <div class="buttons">
+        <button type="cancel" class="btn btn-tertiary" (click)="cancelar()">Cancelar</button>
+        <button type="submit" class="btn btn-primary">Publicar</button>
+    </div>
+  </form>

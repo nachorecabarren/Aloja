@@ -25,6 +25,7 @@ import { SidebarComponent } from "./sidebar/sidebar.component";
 import { HeaderComponent } from "./header/header.component";
 import { RegisterComponent } from "./register/register.component";
 import { CardComponent } from './card/card.component';
+import { NuevaPublicacionComponent } from './nueva-publicacion/nueva-publicacion.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { CardComponent } from './card/card.component';
     HeaderComponent,
     RegisterComponent,
     CardComponent,
+    NuevaPublicacionComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,6 +56,10 @@ import { CardComponent } from './card/card.component';
         path: "personal-info",
         component: PersonalInfoComponent,
         canActivate: [AuthGuardService],
+      },
+      {
+        path: "nueva-publicacion",
+        component: NuevaPublicacionComponent
       },
       { path: "**", component: LoginComponent },
     ]),

@@ -1,0 +1,24 @@
+.form-publicacion {
+
+    padding: 64px;
+    display: inline-block;
+    margin-left: 35%;
+    .buttons {
+        margin-top: 32px;
+        display: inline-flex;
+        /* margin-left: 40%; */
+        .btn {
+            margin-left: 16px;
+        }
+    }
+
+    .otros {
+        .item {
+            display: block;
+            .cb {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
